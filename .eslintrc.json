@@ -18,6 +18,14 @@
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
-    "object-curly-newline": "off"    
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": { "consistent": true, "multiline": true },
+        "ObjectPattern": { "consistent": true, "multiline": true },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+      }
+    ]   
   }
 }
