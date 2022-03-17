@@ -1,1 +1,1 @@
-export { default } from "./abouts";
+    export { default } from "./Capacity";
