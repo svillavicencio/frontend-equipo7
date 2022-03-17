@@ -1,10 +1,10 @@
 import React from "react";
-import Login from "./../components/login";
+import NavBarMenu from "../components/NavbarMenu";
 
 export default function LoginPage() {
   return (
     <>
-      <Login />
+      <NavBarMenu />
     </>
   );
 }
