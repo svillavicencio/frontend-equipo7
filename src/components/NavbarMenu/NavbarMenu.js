@@ -10,16 +10,16 @@ export default function NavBarMenu() {
         <Link to="/"></Link>
         <Container className="ContainerNavbar">
           <Navbar.Brand className="FormatText">
-            <NavLink to="/">Inicio</NavLink>
+            <NavLink to="/home">Inicio</NavLink>
           </Navbar.Brand>
           <Navbar.Brand className="FormatText">
-            <NavLink to="/">Nosotros</NavLink>
+            <NavLink to="/abouts">Nosotros</NavLink>
           </Navbar.Brand>
           <Navbar.Brand className="FormatText">
-            <NavLink to="/">Mis Accesos</NavLink>
+            <NavLink to="/access">Mis Accesos</NavLink>
           </Navbar.Brand>
           <Navbar.Brand className="FormatText">
-            <NavLink to="/">Comenzamos</NavLink>
+            <NavLink to="/capacity">Comenzamos</NavLink>
           </Navbar.Brand>
         </Container>
       </Navbar>
