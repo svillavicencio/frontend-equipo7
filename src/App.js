@@ -1,16 +1,9 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.scss'
+import React from "react";
+import AppRouter from "./routers/appRouter";
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>FrontEnd Test Husky!</p>
-      </header>
-    </div>
-  )
+  return <AppRouter />;
 }
 
-export default App
+export default App;
