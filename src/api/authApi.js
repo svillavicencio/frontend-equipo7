@@ -1,7 +1,7 @@
 import { config } from "../config";
 
 export function signInApi(data) {
-  const url = `${config.basePath}/`;
+  const url = `${config.basePath}/users/signin`;
   const params = {
     method: "POST",
     body: JSON.stringify(data),
