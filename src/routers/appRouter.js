@@ -7,7 +7,6 @@ import Abouts from "../pages/Abouts";
 import Access from "./../pages/Access";
 import Capacity from "../pages/Capacity";
 
-
 function AppRouter() {
   const { user, isLoading } = useAuth();
   console.log(user);
