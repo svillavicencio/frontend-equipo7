@@ -7,6 +7,7 @@ import Abouts from "../pages/Abouts";
 import Access from "../pages/Access";
 import Capacity from "../pages/Capacity";
 import Headers from "../components/Header/Header";
+import FooterPage from "../pages/FooterPage";
 
 function AppRouter() {
   const { user, isLoading } = useAuth();
@@ -34,6 +35,7 @@ function AppRouter() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <FooterPage />
     </BrowserRouter>
   );
 }

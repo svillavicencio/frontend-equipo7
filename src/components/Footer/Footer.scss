@@ -1,0 +1,44 @@
+@import "../../scss/index.scss";
+.footer {
+  background: $colorText !important;
+  box-shadow: 3px 6px 3px 3px rgb(0 0 0 / 30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  &__redesSociales {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0%;
+  }
+  &__animacionRedes:hover {
+    transform: scale(1.3);
+  }
+  &__redesSociales li {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 0%;
+  }
+  &__autor {
+    color: $color-1;
+    padding-bottom: 1.01rem;
+    display: block;
+  }
+}
+img,
+svg {
+  vertical-align: middle;
+  color: $color-1;
+}
+ul {
+  list-style: none;
+}
