@@ -2,21 +2,11 @@
 
 .header {
   background-color: $colorHeader;
-
+  box-shadow: 0px 6px 9px 0px rgb(0 0 0 / 30%);
   img {
-    width: 7rem;
+    width: 13rem;
   }
-  &_textLink {
-    a {
-      text-decoration: none !important;
-      color: $colorLetraMenu !important;
-      font-size: medium;
-    }
-  }
-  &_textLink:hover {
-    a {
-      color: $colorletraHover !important;
-      font-weight: bold;
-    }
+  &_margin {
+    margin-right: 3rem !important;
   }
 }

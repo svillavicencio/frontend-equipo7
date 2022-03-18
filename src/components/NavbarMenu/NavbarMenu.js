@@ -2,13 +2,13 @@ import React from "react";
 import "./NavBar.scss";
 import { NavLink, Link } from "react-router-dom";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import logoUrl from "../../assets/Logo.jpg";
+import logoUrl from "../../assets/logo_teco.png";
 import { config } from "../../config";
 
 export default function NavBarMenu() {
   return (
     <>
-      <Navbar expand="lg" variant="dark">
+      <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand>
             <Link to="/home">
@@ -33,7 +33,7 @@ export default function NavBarMenu() {
             </Nav>
             <Nav className="d-flex">
               <Navbar.Brand className="FormatText">
-                <Button className="logout" onClick={logout}>
+                <Button variant="light" onClick={logout}>
                   Salir
                 </Button>
               </Navbar.Brand>

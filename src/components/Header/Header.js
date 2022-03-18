@@ -8,7 +8,7 @@ export default function Header() {
   const displayHeader = () => {
     return (
       <div className="header">
-        <Container>
+        <Container fluid className="header_margin">
           <Row>
             <Col xs={12}>
               <>
