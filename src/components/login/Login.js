@@ -29,7 +29,7 @@ export default function Login() {
     }
   };
   if (getAccessTokenApi()) {
-    return <Navigate to="/home" />;
+    window.location.href = "/home";
   }
 
   return (
