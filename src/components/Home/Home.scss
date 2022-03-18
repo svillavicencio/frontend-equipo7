@@ -7,15 +7,18 @@
     font-family: $font-family;
     color: $color-1;
     font-weight: bold;
-    border-bottom: 1px solid $color-1;
-    padding-bottom: 2px;
-    margin-bottom: 11px;
+    border-bottom: 0.2rem solid $color-1;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
   }
   &_seccion {
     .row {
       background: $color-subtitulo;
-      border-radius: 10px;
-      padding: 7px;
+      border-radius: 1.2rem;
+      padding: 0.9rem;
       display: flex;
       justify-content: center;
     }
