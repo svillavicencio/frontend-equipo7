@@ -8,12 +8,14 @@ import "./Home.scss";
 export default function Home() {
   const { user } = useAuth();
   const [name, setName] = useState("");
-  const [legajo, setLegajo] = useState("");
-  const [correo, setCorreo] = useState("");
+  const [userFile, setLegajo] = useState("");
+  const [email, setCorreo] = useState("");
+  const [avatar, setAvatar] = useState(userFound);
   useEffect(() => {
     setName(user.name);
-    setLegajo(user.legajo);
-    setCorreo(user.correo);
+    setLegajo(user.userFile);
+    setCorreo(user.email);
+    setAvatar(user.avatar);
   }, [user]);
   console.log(user);
   return (
@@ -23,24 +25,20 @@ export default function Home() {
       </Row>
       <Row md={12} className="home_seccion">
         <Col md={6} className="home_seccion_foto">
-          <img
-            className="home_seccion_foto--img"
-            src={userFound}
-            alt="icoLogo"
-          />
+          <img className="home_seccion_foto--img" src={avatar} alt="icoLogo" />
         </Col>
         <Col md={6} className="home_seccion_datos">
           <Row>{name}</Row>
           <Row>
             <div className="sp-0">
               <span>Legajo:</span>
-              <span>{legajo}</span>
+              <span>{userFile}</span>
             </div>
           </Row>
           <Row>
             <div className="sp-0">
               <span>mail:</span>
-              <span>{correo}</span>
+              <span>{email}</span>
             </div>
           </Row>
         </Col>
