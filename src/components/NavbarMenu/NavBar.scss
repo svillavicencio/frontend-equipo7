@@ -1,13 +1,12 @@
 @import "../../scss/index.scss";
 .navBarMenu {
-  background: $backgroundMenu !important;
   display: flex;
   align-items: center;
 }
 .FormatText a {
   text-decoration: none !important;
   color: $colorLetraMenu !important;
-  font-size: large;
+  font-size: medium;
 }
 .FormatText a:hover {
   color: $colorletraHover !important;

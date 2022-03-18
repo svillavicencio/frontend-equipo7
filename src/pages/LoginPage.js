@@ -1,10 +1,11 @@
 import React from "react";
-import NavBarMenu from "../components/NavbarMenu";
+//import NavBarMenu from "../components/NavbarMenu";
 
 export default function LoginPage() {
   return (
-    <>
-      <NavBarMenu />
-    </>
+    <div className="wrapper">
+      <h1>Login</h1>
+      
+    </div>
   );
 }
