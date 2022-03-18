@@ -1,8 +1,22 @@
-@import "../../scss/index.scss" ;
+@import "../../scss/index.scss";
 
 .header {
-    background-color: $colorHeader;
-    
-    img{ width: 100px} ;
+  background-color: $colorHeader;
 
+  img {
+    width: 7rem;
+  }
+  &_textLink {
+    a {
+      text-decoration: none !important;
+      color: $colorLetraMenu !important;
+      font-size: medium;
+    }
+  }
+  &_textLink:hover {
+    a {
+      color: $colorletraHover !important;
+      font-weight: bold;
+    }
+  }
 }
