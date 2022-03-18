@@ -4,9 +4,12 @@ import { signInApi } from "../../api/authApi";
 import { config } from "../../config/index";
 import { getAccessTokenApi } from "../../api/authApi";
 import logo_teco from "../../assets/logo_teco.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./Login.scss";
 export default function Login() {
+  const notify = (message) => toast.error(message);
   const [inputs, setInputs] = useState({
     userFile: "",
     password: "",
@@ -16,7 +19,7 @@ export default function Login() {
     e.preventDefault();
     const result = await signInApi(inputs);
     if (result.code !== 200) {
-      console.log(result);
+      notify(result.message.message);
     } else {
       if (Object.keys(result.message).length > 1) {
         const user = JSON.stringify(result.message);
@@ -24,7 +27,7 @@ export default function Login() {
         localStorage.setItem(config.REFRESH_TOKEN, user);
         window.location.href = "/home";
       } else {
-        console.log(result.message);
+        notify(result.message.message);
       }
     }
   };
@@ -34,6 +37,17 @@ export default function Login() {
 
   return (
     <div className="container mt-3">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <Form autoComplete="off" onSubmit={login} className="login">
         <div>
           <img src={logo_teco} alt="logo" />
