@@ -5,6 +5,7 @@ import userFound from "../../assets/user.png";
 import imgPrueba from "../../assets/data1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { Form } from "react-bootstrap";
 import "./Access.scss";
 
 export default function Access() {
@@ -53,15 +54,25 @@ export default function Access() {
             </Row>
           </Col>
         </Row>
-        {/* <div className="separacion"></div> */}
         <Row className="center">
           <Col sm={11} md={3} className="access_ext">
             <h3>Mi Puesto</h3>
             <div className="access_contenedor">
-              <span>mail:</span>
-              <span>{email}</span>
+              <Form>
+                <Form.Group className="mb-2">
+                  <Form.Label>Legajo</Form.Label>
+                  <Form.Control type="text" />
+                </Form.Group>
+                <Form.Group className="mb-2">
+                  <Form.Label>Rol</Form.Label>
+                  <Form.Control type="text" />
+                </Form.Group>
+                <Form.Group className="mb-2">
+                  <Form.Label>Gerencia</Form.Label>
+                  <Form.Control type="text" />
+                </Form.Group>
+              </Form>
             </div>
-            {/* <Button className="access_subtitulo">Sobre Nosotros</Button> */}
           </Col>
           <Col sm={11} md={3} className="access_ext">
             <h3>Datos Personales</h3>
