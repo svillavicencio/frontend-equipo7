@@ -19,7 +19,7 @@ export default function Login() {
       const user = JSON.stringify(result.message);
       localStorage.setItem(config.ACCESS_TOKEN, user);
       localStorage.setItem(config.REFRESH_TOKEN, user);
-      //window.location.href = "/home";
+      window.location.href = "/home";
     }
   };
 
