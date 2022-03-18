@@ -14,10 +14,10 @@ export function signInApi(data) {
       return response.json();
     })
     .then((result) => {
-      return result;
+      return { code: 200, message: result };
     })
     .catch((err) => {
-      return err.message;
+      return { code: 500, message: err.message };
     });
 }
 
