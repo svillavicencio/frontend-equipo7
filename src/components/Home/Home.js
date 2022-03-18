@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Row, Container, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import userFound from "../../assets/user.png";
 import imgComenzamos from "../../assets/comenzamos.svg";
@@ -54,7 +55,7 @@ export default function Home() {
               alt="nosotros"
             />
           </div>
-          <Button className="home_subtitulo">Sobre Nosotros</Button>
+          <Button className="home_subtitulo"><Link to="/abouts">Sobre Nosotros </Link></Button>
         </Col>
         <Col sm={11} md={3} className="home_ext">
           <div className="home_contenedor">
@@ -64,7 +65,7 @@ export default function Home() {
               alt="accesos"
             />
           </div>
-          <Button className="home_subtitulo">Mis Accesos</Button>
+          <Button className="home_subtitulo"><Link to="/access">Mis Accesos </Link></Button>
         </Col>
         <Col sm={11} md={3} className="home_ext">
           <div className="home_contenedor">
@@ -74,7 +75,7 @@ export default function Home() {
               alt="comienzo"
             />
           </div>
-          <Button className="home_subtitulo">Como Comienzo?</Button>
+          <Button className="home_subtitulo"><Link to="/capacity">Como Comienzo? </Link></Button>
         </Col>
       </Row>
     </Container>

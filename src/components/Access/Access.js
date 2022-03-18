@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Row, Container, Col, Button } from "react-bootstrap";
+//import { Row, Container, Col, Button } from "react-bootstrap";
+import { Row, Container, Col } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import userFound from "../../assets/user.png";
-import imgPrueba from "../../assets/data1.jpg";
+//import imgPrueba from "../../assets/data1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { Form } from "react-bootstrap";
@@ -14,6 +15,7 @@ export default function Access() {
   const [userFile, setLegajo] = useState("");
   const [email, setCorreo] = useState("");
   const [avatar, setAvatar] = useState(userFound);
+  
   useEffect(() => {
     setName(user.name);
     setLegajo(user.userFile);
@@ -22,7 +24,7 @@ export default function Access() {
   }, [user]);
   return (
     <>
-      <Container className="access" fluid>
+      <Container id={userFile} className="access" fluid>
         <Row md={12} className="access_titulo">
           <span>Mis Accesos</span>
         </Row>
@@ -46,7 +48,7 @@ export default function Access() {
           <Col md={4}>
             <Row>
               <div className="sp-0">
-                <a href="https://smart.telecom.com.ar/" target="_blank">
+                <a href="https://smart.telecom.com.ar/" rel="noreferrer" target="_blank">
                   <span>Conoce nuestro Equipo</span>
                   <FontAwesomeIcon icon={faRightFromBracket} size="2x" />
                 </a>

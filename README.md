@@ -1,37 +1,35 @@
-# Frontend Equipo 7
+## Frontend Onboarding Equipos 
+### Equipo 7 
 
 #### Dev Team :
 
-Florencia Villafañe
-
-Jonathan Stampella
-
-Carlos Tejada
-
-Ariel Lorenzo
-
-Raúl Tedesco
-
-Daniel Torres
-
-Sergio Villavicencio
+| Nombre | GitHub ID | Skills |
+| ---- | --------- | --------- |
+| Florencia Villafañe | florvillafane | Frontend |
+| Jonathan Stampella | jonathan | Frontend |
+| Carlos Tejada | ctejada | Frontend | 
+| Ariel Lorenzo | borboton | Frontend |
+| Raúl Tedesco | raultedesco | Backend |
+| Daniel Torres | torresjdaniel | Backend |
+| Sergio Villavicencio | svillavicencio | Backend |
 
 #### Mentores :
-
-Alex Villecco
-
-Damian Bento
+| Nombre | Rol |
+| ---- | --------- |
+| Alex Villecco | Mentor |
+| Damian Bento | Mentor |
 
 
 ## Screenshots
 
-[![Screenshot](https://imgur.com/FusJxib)]
-[![Screenshot](https://imgur.com/qxyjqNg)]
-[![Screenshot](https://imgur.com/3I2BY9j)]
+![Screenshot](src/assets/preview-1.png)
+![Screenshot](src/assets/preview-2.png)
+![Screenshot](src/assets/preview-3.png)
 
 ## Comenzando 🚀
 
 _Lorem ipsum dolor sit amet. Sit dolor quia qui dicta accusantium non modi voluptas est doloremque incidunt sed dolores numquam._
+
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 ## Despliegue 📦

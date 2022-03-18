@@ -1,6 +1,9 @@
 @import "../../scss/index.scss";
 
 .home {
+  a{
+  text-decoration: none; 
+  }
   &_titulo {
     text-align: center;
     font-size: 0em + calc(22px / $default-font-size);

@@ -30,7 +30,7 @@ export default function Footer() {
           />
         </li>
       </ul>
-      <div className="footer__autor">Copyrigh © By Equipo7</div>
+      <div className="footer__autor">Copyright © By Equipo7</div>
     </div>
   );
 }
