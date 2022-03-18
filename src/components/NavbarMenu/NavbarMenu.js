@@ -1,8 +1,9 @@
 import React from "react";
 import "./NavBar.scss";
 import { NavLink, Link } from "react-router-dom";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import logoUrl from "../../assets/Logo.jpg";
+import { config } from "../../config";
 
 export default function NavBarMenu() {
   return (
@@ -32,7 +33,9 @@ export default function NavBarMenu() {
             </Nav>
             <Nav className="d-flex">
               <Navbar.Brand className="FormatText">
-                <NavLink to="/">Logout</NavLink>
+                <Button className="logout" onClick={logout}>
+                  Salir
+                </Button>
               </Navbar.Brand>
             </Nav>
           </Navbar.Collapse>
@@ -40,4 +43,10 @@ export default function NavBarMenu() {
       </Navbar>
     </>
   );
+}
+
+export function logout() {
+  localStorage.removeItem(config.ACCESS_TOKEN);
+  localStorage.removeItem(config.REFRESH_TOKEN);
+  window.location.href = "/";
 }

@@ -17,7 +17,6 @@ export default function Home() {
     setCorreo(user.email);
     setAvatar(user.avatar);
   }, [user]);
-  console.log(user);
   return (
     <Container className="home" fluid>
       <Row md={12} className="home_titulo">

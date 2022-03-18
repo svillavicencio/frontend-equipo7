@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Navigate } from "react-router";
 import { Form, Button } from "react-bootstrap";
 import { signInApi } from "../../api/authApi";
 import { config } from "../../config/index";
