@@ -1,14 +1,13 @@
 @import "../../scss/index.scss";
 .footer {
   background: $colorText !important;
-  box-shadow: 3px 6px 3px 3px rgb(0 0 0 / 30%);
+  border-top: solid 0.13rem rgba(0, 0, 0, 0.123);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 6rem;
   width: 100%;
-  //position: fixed;
   bottom: 0;
   &__redesSociales {
     width: 100%;
