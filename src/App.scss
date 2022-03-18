@@ -4,8 +4,13 @@ body {
   margin: 0px;
   height: 100%;
 }
+.margin-bottom-6 {
+  margin-bottom: 6em;
+}
 #root {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   // display: flex;
   // align-items: center;
   // justify-content: center;
