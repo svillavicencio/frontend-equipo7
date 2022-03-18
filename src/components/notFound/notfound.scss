@@ -1,0 +1,15 @@
+@import "../../scss/index.scss";
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  img {
+    max-height: 300px;
+  }
+  button {
+    background-color: $color-2;
+  }
+}

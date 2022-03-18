@@ -36,7 +36,7 @@ export default function Login() {
     <div className="container mt-3">
       <Form autoComplete="off" onSubmit={login} className="login">
         <div>
-          <img src={logo_teco} />
+          <img src={logo_teco} alt="logo" />
         </div>
         <Form.Group className="login_input" controlId="formBasicEmail">
           <Form.Label>Usuario</Form.Label>

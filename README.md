@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Frontend Equipo 7
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Dev Team :
 
-## Available Scripts
+Florencia Villafañe
+Jonathan Stampella
+Carlos Tejada
+Ariel Lorenzo
+Raúl Tedesco
+Daniel Torres
+Sergio Villavicencio
 
-In the project directory, you can run:
+#### Mentores :
 
-### `npm start`
+Alex Villecco
+Damian Bento
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![Screenshot](https://imgur.com/FusJxib)]
+[![Screenshot](https://imgur.com/qxyjqNg)]
+[![Screenshot](https://imgur.com/3I2BY9j)]
 
-### `npm test`
+## Comenzando 🚀
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Lorem ipsum dolor sit amet. Sit dolor quia qui dicta accusantium non modi voluptas est doloremque incidunt sed dolores numquam._
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-### `npm run build`
+## Despliegue 📦
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deploy automatico a partir de una rama (main) en Vercel.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Construido con 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Travis](https://travis-ci.org/skycloud1030/react-shields-badge.svg?branch=master)](https://travis-ci.org/skycloud1030/react-shields-badge)
+[![Coverage Status](https://coveralls.io/repos/github/skycloud1030/react-shields-badge/badge.svg?branch=master)](https://coveralls.io/github/skycloud1030/react-shields-badge?branch=master)
+[![Version](https://img.shields.io/npm/v/react-shields-badge.svg)](https://www.npmjs.com/package/react-shields-badge)
+[![Donloads](https://img.shields.io/npm/dm/react-shields-badge.svg)](https://www.npmjs.com/package/react-shields-badge)
