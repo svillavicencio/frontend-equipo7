@@ -1,11 +1,10 @@
 import React from "react";
-//import NavBarMenu from "../components/NavbarMenu";
+import Login from "../components/login";
 
 export default function LoginPage() {
   return (
     <div className="wrapper">
-      <h1>Login</h1>
-      
+      <Login />
     </div>
   );
 }
