@@ -27,6 +27,7 @@
 ![Screenshot](src/assets/preview-3.png)
 
 ## Comenzando 🚀
+WireFrame : https://miro.com/app/board/uXjVOE7lkRE=/
 
 _Lorem ipsum dolor sit amet. Sit dolor quia qui dicta accusantium non modi voluptas est doloremque incidunt sed dolores numquam._
 
@@ -35,6 +36,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 ## Despliegue 📦
 
 Deploy automatico a partir de una rama (main) en Vercel.
+URL : https://frontend-equipo7.vercel.app/
 
 ## Construido con 🛠️
 
