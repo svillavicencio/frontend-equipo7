@@ -6,7 +6,7 @@ import "./notfound.scss";
 export default function notFound() {
   return (
     <div className="notFound">
-      <img src={notfound} />
+      <img alt="notFound" src={notfound} />
       <Button>Ir a Inicio</Button>
     </div>
   );
