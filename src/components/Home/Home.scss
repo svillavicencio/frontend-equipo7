@@ -15,6 +15,7 @@
     margin-right: 1.5rem !important;
   }
   &_seccion {
+    align-items: center;
     .row {
       background: $color-subtitulo;
       border-radius: 1.2rem;
@@ -72,9 +73,10 @@
   }
   &_contenedor {
     border-radius: 6px;
-    border: 1px solid $color-1;
-    min-height: 200px;
+    border: 1px dashed $color-1;
+    height: 200px;
     width: 100%;
+    padding: 15px;
   }
 
   &_subtitulo {

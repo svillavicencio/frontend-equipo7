@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Row, Container, Col, Button } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import userFound from "../../assets/user.png";
-import imgPrueba from "../../assets/prueba.png";
+import imgComenzamos from "../../assets/comenzamos.svg";
+import imgAccesos from "../../assets/misaccesos.svg";
+import imgNosotros from "../../assets/nosotros.svg";
 
 import "./Home.scss";
 export default function Home() {
@@ -48,7 +50,7 @@ export default function Home() {
           <div className="home_contenedor">
             <img
               className="home_seccion_foto--img"
-              src={imgPrueba}
+              src={imgNosotros}
               alt="nosotros"
             />
           </div>
@@ -58,7 +60,7 @@ export default function Home() {
           <div className="home_contenedor">
             <img
               className="home_seccion_foto--img"
-              src={imgPrueba}
+              src={imgAccesos}
               alt="accesos"
             />
           </div>
@@ -68,7 +70,7 @@ export default function Home() {
           <div className="home_contenedor">
             <img
               className="home_seccion_foto--img"
-              src={imgPrueba}
+              src={imgComenzamos}
               alt="comienzo"
             />
           </div>

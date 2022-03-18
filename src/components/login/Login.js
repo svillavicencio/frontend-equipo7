@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { signInApi } from "../../api/authApi";
 import { config } from "../../config/index";
 import { getAccessTokenApi } from "../../api/authApi";
+import logo_teco from "../../assets/logo_teco.png";
 
 import "./Login.scss";
 export default function Login() {
@@ -34,6 +35,9 @@ export default function Login() {
   return (
     <div className="container mt-3">
       <Form autoComplete="off" onSubmit={login} className="login">
+        <div>
+          <img src={logo_teco} />
+        </div>
         <Form.Group className="login_input" controlId="formBasicEmail">
           <Form.Label>Usuario</Form.Label>
           <Form.Control
