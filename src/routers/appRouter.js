@@ -3,11 +3,10 @@ import useAuth from "../hooks/useAuth";
 import NotFound from "./../pages/notFound";
 import LoginPage from "./../pages/LoginPage";
 import HomePage from "./../pages/homePage";
-
+import Abouts from "../pages/Abouts";
+import Access from "../pages/Access";
+import Capacity from "../pages/Capacity";
 import Headers from "../components/Header/Header";
-import Abouts from "../pages/abouts";
-import Access from "../pages/access";
-import Capacity from "../pages/capacity";
 
 function AppRouter() {
   const { user, isLoading } = useAuth();
