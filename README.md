@@ -51,6 +51,9 @@ MVP creado por el equipo 7 para la Hackaton Tech Station por Telecom.
 
 ## Run Locally
 
+
+**user y pass:** 567124/123123 
+
 Clone the project
 
 ```bash
