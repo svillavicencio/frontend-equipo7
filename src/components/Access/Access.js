@@ -15,7 +15,7 @@ export default function Access() {
   const [userFile, setLegajo] = useState("");
   const [email, setCorreo] = useState("");
   const [avatar, setAvatar] = useState(userFound);
-  
+
   useEffect(() => {
     setName(user.name);
     setLegajo(user.userFile);
@@ -28,7 +28,7 @@ export default function Access() {
         <Row md={12} className="access_titulo">
           <span>Mis Accesos</span>
         </Row>
-        <Row md={12} className="access_seccion">
+        <Row md={12} className="access_seccion nt">
           <Col md={3} className="access_seccion_foto">
             <img
               className="access_seccion_foto--img"
@@ -47,8 +47,13 @@ export default function Access() {
           </Col>
           <Col md={4}>
             <Row>
-              <div className="sp-0">
-                <a href="https://smart.telecom.com.ar/" rel="noreferrer" target="_blank">
+              <div className="sp-0 nx ">
+                <a
+                  className="nt"
+                  href="https://smart.telecom.com.ar/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <span>Conoce nuestro Equipo</span>
                   <FontAwesomeIcon icon={faRightFromBracket} size="2x" />
                 </a>
