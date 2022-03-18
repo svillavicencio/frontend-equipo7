@@ -3,17 +3,25 @@
 #### Dev Team :
 
 Florencia Villafañe
+
 Jonathan Stampella
+
 Carlos Tejada
+
 Ariel Lorenzo
+
 Raúl Tedesco
+
 Daniel Torres
+
 Sergio Villavicencio
 
 #### Mentores :
 
 Alex Villecco
+
 Damian Bento
+
 
 ## Screenshots
 
