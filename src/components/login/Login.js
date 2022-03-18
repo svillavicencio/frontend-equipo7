@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router";
 import { Form, Button } from "react-bootstrap";
 import { signInApi } from "../../api/authApi";
 import { config } from "../../config/index";
+import { getAccessTokenApi } from "../../api/authApi";
 
 import "./Login.scss";
 export default function Login() {
@@ -16,12 +18,19 @@ export default function Login() {
     if (result.code !== 200) {
       console.log(result);
     } else {
-      const user = JSON.stringify(result.message);
-      localStorage.setItem(config.ACCESS_TOKEN, user);
-      localStorage.setItem(config.REFRESH_TOKEN, user);
-      window.location.href = "/home";
+      if (Object.keys(result.message).length > 1) {
+        const user = JSON.stringify(result.message);
+        localStorage.setItem(config.ACCESS_TOKEN, user);
+        localStorage.setItem(config.REFRESH_TOKEN, user);
+        window.location.href = "/home";
+      } else {
+        console.log(result.message);
+      }
     }
   };
+  if (getAccessTokenApi()) {
+    return <Navigate to="/home" />;
+  }
 
   return (
     <div className="container mt-3">
