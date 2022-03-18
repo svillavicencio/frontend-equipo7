@@ -1,0 +1,75 @@
+@import "../../scss/index.scss";
+.about {
+  &_contenedor {
+    margin-top: 1.5rem;
+    &--video {
+      border-radius: 0.5rem;
+      border: 0.05rem solid $color-1;
+      min-height: 15rem;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0.2rem 0.1rem 3px 0px rgb(0 0 0 / 40%);
+    }
+  }
+  &_ext {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  &_titulo {
+    text-align: center;
+    font-size: 0em + calc(30px / $default-font-size);
+    font-family: $font-family;
+    color: $colorSeparador;
+    font-weight: bold;
+    border-bottom: 0.2rem solid $color-1;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+  &_parrafo {
+    font-size: 0em + calc(20px / $default-font-size);
+    font-family: $font-family;
+    text-align: justify;
+    color: $color-1;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+    &--presentacion {
+      color: $colorSeparador2;
+    }
+  }
+  &_center {
+    justify-content: center;
+  }
+  &_section {
+    border-bottom: 0.1rem solid $color-1;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+
+    &--titulo {
+      font-size: 0em + calc(20px / $default-font-size);
+      font-family: $font-family;
+      text-align: justify;
+      color: $colorSeparador2;
+    }
+    &--parrafo {
+      font-size: 0em + calc(18px / $default-font-size);
+      color: $color-1;
+    }
+  }
+}
+.row {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+  margin-top: 1.5rem !important;
+}

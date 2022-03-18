@@ -1,0 +1,85 @@
+/* scss para capacity*/
+@import "../../scss/index.scss";
+
+.capacity {
+  flex: 1;
+  &_titulo {
+    text-align: center;
+    font-size: 0em + calc(22px / $default-font-size);
+    font-family: $font-family;
+    color: $colorSeparador;
+    font-weight: bold;
+    border-bottom: 0.2rem solid $colorSeparador;
+    margin-bottom: 11px;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+  &_sub {
+    text-align: center;
+    font-size: 0em + calc(20px / $default-font-size);
+    font-family: $font-family;
+    color: $colorSeparador2;
+    font-weight: bold;
+    border-bottom: 0.2rem solid $colorSeparador2;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &_ext {
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &_contenedor {
+    border-radius: 0.5rem;
+    border: 0.05rem solid $color-1;
+    min-height: 13.5rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.1rem 3px 0px rgb(0 0 0 / 40%);
+  }
+
+  &_subtitulo {
+    font-size: 0em + calc(12px / $default-font-size);
+    color: $colorText !important;
+    font-weight: bold !important;
+    background-color: $background-2 !important;
+    margin-top: 1.8rem;
+    border-color: $color-2 !important;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgb(0 0 0 / 30%);
+
+    &:hover {
+      background-color: $color-2 !important;
+      border-color: $color-1;
+      color: $colorTextHover !important;
+      font-weight: bold;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.titul {
+  font-size: 0em + calc(22px / $default-font-size);
+  color: #5d37a0 !important;
+  font-weight: bold !important;
+  margin: 1.5rem;
+  border-color: $color-2 !important;
+}

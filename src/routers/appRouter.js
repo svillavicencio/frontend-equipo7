@@ -4,15 +4,17 @@ import NotFound from "./../pages/notFound";
 import LoginPage from "./../pages/LoginPage";
 import HomePage from "./../pages/homePage";
 import Abouts from "../pages/Abouts";
-import Access from "./../pages/Access";
+import Access from "../pages/Access";
 import Capacity from "../pages/Capacity";
+import Headers from "../components/Header/Header";
+import FooterPage from "../pages/FooterPage";
 
 function AppRouter() {
   const { user, isLoading } = useAuth();
-  console.log(user);
   if (isLoading) return <></>;
   return (
     <BrowserRouter>
+      <Headers />
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route
@@ -33,6 +35,7 @@ function AppRouter() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <FooterPage />
     </BrowserRouter>
   );
 }

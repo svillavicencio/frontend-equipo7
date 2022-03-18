@@ -1,7 +1,7 @@
 import { config } from "../config";
 
 export function signInApi(data) {
-  const url = `${config.basePath}/`;
+  const url = `${config.basePath}/users/signin`;
   const params = {
     method: "POST",
     body: JSON.stringify(data),
@@ -14,10 +14,10 @@ export function signInApi(data) {
       return response.json();
     })
     .then((result) => {
-      return result;
+      return { code: 200, message: result };
     })
     .catch((err) => {
-      return err.message;
+      return { code: 500, message: err.message };
     });
 }
 

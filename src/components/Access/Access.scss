@@ -1,0 +1,108 @@
+@import "../../scss/variables";
+
+.access {
+  flex: 1;
+  &_titulo {
+    text-align: center;
+    font-size: 0em + calc(22px / $default-font-size);
+    font-family: $font-family;
+    color: $color-1;
+    font-weight: bold;
+    border-bottom: 0.2rem solid $color-1;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+  &_seccion {
+    .row {
+      background: $color-subtitulo;
+      border-radius: 1.2rem;
+      padding: 0.9rem;
+      display: flex;
+      justify-content: center;
+    }
+    font-size: 0em + calc(18px / $default-font-size);
+    justify-content: center;
+    &_datos {
+      .row {
+        margin: 10px 25px;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-weight: bold;
+    }
+    .sp-0 {
+      text-align: center;
+      padding: 0px;
+      span {
+        padding-right: 0px;
+        font-weight: 600;
+      }
+      span:first-child {
+        padding-right: 15px;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+        color: $color-1;
+      }
+    }
+    &_foto {
+      border: 0.3rem solid $color-subtitulo;
+      max-width: 10rem !important;
+      height: 10rem !important;
+      border-radius: 100px;
+      overflow: hidden;
+      &--img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &_ext {
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &_contenedor {
+    border-radius: 6px;
+    border: 1px solid $color-1;
+    min-height: 200px;
+    width: 100%;
+  }
+
+  &_subtitulo {
+    flex: 1;
+    color: $color-2 !important;
+    font-weight: bold !important;
+    background-color: $color-subtitulo !important;
+    margin: 15px;
+    border-color: $color-2 !important;
+    &:hover {
+      background-color: $color-2 !important;
+      border-color: black;
+      color: $color-subtitulo !important;
+    }
+  }
+}
+
+.separacion {
+  margin: 15px;
+  height: 1px;
+  border-top: 1px dashed $color-1;
+}
+
+.center {
+  justify-content: center;
+}

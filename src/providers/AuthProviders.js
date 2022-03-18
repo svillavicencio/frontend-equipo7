@@ -16,7 +16,12 @@ export default function AuthProviders(props) {
 }
 
 function checkUserLogin(setUser) {
-  const accessToken = getAccessTokenApi();
+  let accessToken = getAccessTokenApi();
+  // accessToken = {
+  //   name: "jonathan stampella",
+  //   correo: "jstampella@teco.com.ar",
+  //   legajo: "U609798",
+  // };
   if (!accessToken) {
     const refressToken = getRefreshTokenApi();
     if (!refressToken) {
@@ -31,7 +36,7 @@ function checkUserLogin(setUser) {
   } else {
     setUser({
       isLoading: false,
-      user: accessToken,
+      user: JSON.parse(accessToken),
     });
   }
 }

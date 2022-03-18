@@ -1,5 +1,13 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import notfound from "../../assets/404found.gif";
 
+import "./notfound.scss";
 export default function notFound() {
-  return <div>notFound</div>;
+  return (
+    <div className="notFound">
+      <img alt="notFound" src={notfound} />
+      <Button>Ir a Inicio</Button>
+    </div>
+  );
 }

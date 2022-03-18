@@ -1,13 +1,12 @@
 @import "../../scss/index.scss";
 .navBarMenu {
-  background: $backgroundMenu !important;
   display: flex;
   align-items: center;
 }
 .FormatText a {
   text-decoration: none !important;
   color: $colorLetraMenu !important;
-  font-size: large;
+  font-size: medium;
 }
 .FormatText a:hover {
   color: $colorletraHover !important;
@@ -16,4 +15,15 @@
 .ContainerNavbar {
   align-items: center !important;
   justify-content: center !important;
+}
+
+.logout {
+  background-color: $background-1 !important;
+}
+.container-fluid {
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+}
+button:hover {
+  background-color: $background-2 !important;
 }
