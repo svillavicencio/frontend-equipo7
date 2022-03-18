@@ -1,6 +1,15 @@
 @import "../../scss/variables";
 
 .access {
+  .nt {
+    display: flex;
+    align-items: center;
+  }
+  .nx {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
   flex: 1;
   &_titulo {
     text-align: center;
@@ -16,6 +25,7 @@
     margin-right: 1.5rem !important;
   }
   &_seccion {
+    justify-content: center;
     .row {
       background: $color-subtitulo;
       border-radius: 1.2rem;
@@ -26,6 +36,7 @@
     font-size: 0em + calc(18px / $default-font-size);
     justify-content: center;
     &_datos {
+      flex: auto !important;
       .row {
         margin: 10px 25px;
       }
@@ -76,6 +87,7 @@
     flex-wrap: wrap;
   }
   &_contenedor {
+    flex: 1;
     border-radius: 6px;
     border: 1px solid $color-1;
     min-height: 200px;

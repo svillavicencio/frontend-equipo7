@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import userFound from "../../assets/user.png";
-//import imgPrueba from "../../assets/data1.jpg";
+import { getuserApi } from "../../api/userApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { Form } from "react-bootstrap";
@@ -14,13 +14,18 @@ export default function Access() {
   const [name, setName] = useState("");
   const [userFile, setLegajo] = useState("");
   const [email, setCorreo] = useState("");
+  const [tool, setTool] = useState([]);
   const [avatar, setAvatar] = useState(userFound);
-  
+
   useEffect(() => {
     setName(user.name);
     setLegajo(user.userFile);
     setCorreo(user.email);
     setAvatar(user.avatar);
+    getuserApi(user.userFile).then((response) => {
+      setTool(response.data.tools);
+      console.log(response);
+    });
   }, [user]);
   return (
     <>
@@ -28,7 +33,7 @@ export default function Access() {
         <Row md={12} className="access_titulo">
           <span>Mis Accesos</span>
         </Row>
-        <Row md={12} className="access_seccion">
+        <Row md={12} className="access_seccion nt">
           <Col md={3} className="access_seccion_foto">
             <img
               className="access_seccion_foto--img"
@@ -47,8 +52,13 @@ export default function Access() {
           </Col>
           <Col md={4}>
             <Row>
-              <div className="sp-0">
-                <a href="https://smart.telecom.com.ar/" rel="noreferrer" target="_blank">
+              <div className="sp-0 nx ">
+                <a
+                  className="nt"
+                  href="https://smart.telecom.com.ar/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <span>Conoce nuestro Equipo</span>
                   <FontAwesomeIcon icon={faRightFromBracket} size="2x" />
                 </a>
@@ -86,8 +96,13 @@ export default function Access() {
           <Col sm={11} md={3} className="access_ext">
             <h3>Tools</h3>
             <div className="access_contenedor">
-              <span>mail:</span>
-              <span>{email}</span>
+              {tool.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <span>{item}</span>
+                  </div>
+                );
+              })}
             </div>
           </Col>
         </Row>
