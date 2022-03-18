@@ -104,7 +104,7 @@
 .separacion {
   margin: 15px;
   height: 1px;
-  border-top: 1px dashed $color-1;
+  border-top: 1px dashed /* $color-1*/;
 }
 
 .center {
